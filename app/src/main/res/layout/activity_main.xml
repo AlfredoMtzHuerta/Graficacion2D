@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:backgroundTint="@android:color/holo_blue_dark"
+    tools:context="com.example.alfredo.animacion2d.MainActivity">
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="105dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginStart="128dp"
+        android:onClick="IrFigura"
+        android:text="Enviar" />
+
+    <CheckBox
+        android:id="@+id/cbCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CIRCULO"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnEnviar"
+        android:layout_alignEnd="@+id/btnEnviar"
+        android:layout_marginTop="25dp" />
+
+    <CheckBox
+        android:id="@+id/cbRectangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECTANGULO"
+        android:layout_below="@+id/cbOvalo"
+        android:layout_alignLeft="@+id/cbCirculo"
+        android:layout_alignStart="@+id/cbCirculo"
+        android:layout_marginTop="13dp" />
+
+    <CheckBox
+        android:id="@+id/cbTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEXTO"
+        android:layout_below="@+id/cbRectangulo"
+        android:layout_alignRight="@+id/cbOvalo"
+        android:layout_alignEnd="@+id/cbOvalo"
+        android:layout_marginTop="14dp" />
+
+    <CheckBox
+        android:id="@+id/cbOvalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OVALO"
+        android:layout_below="@+id/cbLinea"
+        android:layout_alignLeft="@+id/cbRectangulo"
+        android:layout_alignStart="@+id/cbRectangulo"
+        android:layout_marginTop="23dp" />
+
+    <CheckBox
+        android:id="@+id/cbLinea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LINEA"
+        android:layout_below="@+id/cbCirculo"
+        android:layout_alignLeft="@+id/btnEnviar"
+        android:layout_alignStart="@+id/btnEnviar"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/edTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEnviar"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Texto"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTexto"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/btnEnviar"
+        android:layout_toRightOf="@+id/btnEnviar"
+        android:onClick="EnviarTexto"
+        android:text="enviar" />
+
+    <Button
+        android:id="@+id/btnTodos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnEnviar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:onClick="EnviarTodo"
+        android:text="enviar" />
+
+</RelativeLayout>
